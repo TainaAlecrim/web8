@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="stylesheet" href="mycode.css">
+
+    <title>Exercicio web08</title>
+    <meta charset="utf-8">
+    <!-- Meta tags Obrigatorias -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Titulo Criativo</h1>
+        <p>Sub titulo</p>
+    </div>
+
+    <div class="container-fluid">
+        <h1>Tabela de Classe de IP </h1>
+        <p>Redes de computadores </p>
+    </div>
+
+    <div class="container">
+        <h4>Exemplo com 3 colunas iguais</h4>
+        <div class="row">
+            <div class="col">Bits para Sub-rede</div>
+            <div class="col">Macara de sub-rede</div>
+            <div class="col">Nº de sub-redes</div>
+        </div>
+
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">255.255.255.128</div>
+            <div class="col">2 (0)</div>
+        </div>
+
+    </div>
+
+    <br>
+
+
+    <div class="container">
+        <h4>Exemplo com 4 colunas sm </h4>
+
+        <div class="row">
+            <div class="col-sm-3">Bits para Sub-rede</div>
+            <div class="col-sm-3">Macara de sub-rede</div>
+            <div class="col-sm-3">Numero de sub-redes</div>
+            <div class="col-sm-3">Numero de Host</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">1</div>
+            <div class="col-sm-3">255.255.255.128</div>
+            <div class="col-sm-3">2 (0) </div>
+            <div class="col-sm-3">126 (2*7-2)</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">2</div>
+            <div class="col-sm-3">255.255.255.192</div>
+            <div class="col-sm-3">4 (2) </div>
+            <div class="col-sm-3">62 (2*6-2)</div>
+        </div>
+
+
+    </div>
+
+    <br>
+
+
+
+    <div class="container">
+        <h4>Exemplo com 2 colunas responsivas desiguais</h4>
+        <div class="row">
+            <div class="col-sm-4">Bits para Sub-rede</div>
+            <div class="col-sm-8">Macara de sub-rede</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">1</div>
+            <div class="col-sm-8">255.255.255.128</div>
+        </div>
+    </div>
+
+    <br>
+
+
+
+    <div class="container">
+        <h4>Conteudo de largura variavel</h4>
+        <div class="row">
+            <div class="col ">
+                Classe
+            </div>
+            <div class="col-md-auto">
+                Numero de Sub-rede
+            </div>
+            <div class="col-md-auto">
+                Bits para Sub-rede
+            </div>
+            <div class="col-md-auto">
+                Mascara de Sub-rede
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-auto">
+                Um endereço IP tem dois componentes, o endereço de rede e o endereço do host.
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <h4>4 colunas de largura igual</h4>
+        <div class="row">
+            <div class="col-sm-3">Classe</div>
+            <div class="col-sm-3">.Numero de Sub-rede</div>
+            <div class="col-sm-3">Bits para Sub-rede</div>
+            <div class="col-sm-3">Mascara de Sub-rede</div>
+        </div>
+    </div>
+
+    <br>
+
+    <table class="container">
+        <thead>
+            <tr>
+                <th scope="col">Classe</th>
+                <th scope="col">Bits Sub-rede</th>
+                <th scope="col">Mascara sub-rede</th>
+                <th scope="col">Numero Hosts</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">A</th>
+                <td>1</td>
+                <td>255.255.255.192</td>
+                <td>126 (2*7-2)</td>
+            </tr>
+            <tr>
+                <th scope="row">B</th>
+                <td>2</td>
+                <td>255.255.255.128</td>
+                <td>62 (2*6-2)</td>
+            </tr>
+            <tr>
+                <th scope="row">C</th>
+                <td>3</td>
+                <td>255.255.255.224</td>
+                <td>30 (2*5-2)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table class="table table-striped table-dark" class="row justify-content-center">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Primeiro</th>
+                <th scope="col">Último</th>
+                <th scope="col">Nickname</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="container">
+        <h4 class="center">Ligue</h4>
+        <div class="row justify-content-around">
+            <div class="col-4">
+                Portugues   
+            </div>
+            <div class="col-4">
+                Ingles
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-4">
+                Uma de duas colunas
+            </div>
+            <div class="col-4">
+                Uma de duas colunas
+            </div>
+        </div>
+        <div class="row justify-content-around">
+                <div class="col-4">
+                    Uma de duas colunas
+                </div>
+                <div class="col-4">
+                    Uma de duas colunas
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    Uma de duas colunas
+                </div>
+                <div class="col-4">
+                    Uma de duas colunas
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                    <div class="col-4">
+                        Uma de duas colunas
+                    </div>
+                    <div class="col-4">
+                        Uma de duas colunas
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-4">
+                        Uma de duas colunas
+                    </div>
+                    <div class="col-4">
+                        Uma de duas colunas
+                    </div>
+                </div>
+    </div>
+
+
+</body>
+
+</html>
